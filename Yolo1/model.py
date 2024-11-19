@@ -120,7 +120,7 @@ class Yolov1(nn.Module):
             nn.Linear(496, S * S * (C + B * 5)),
         )
 
-"""
+"""""
 # shape result = 1470 (7*7*30)
 def test(S=7, B=2, C=20):
     model = Yolov1(split_size = S, num_boxes=B, num_classes = C)
