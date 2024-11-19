@@ -14,6 +14,7 @@ List is structured by tuples and lastly int with number of repeats
 """
 
 architecture_config = [
+    # Tuple : (kernel_size, num_filters,stride, padding)
     (7, 64, 2, 3),
     "M",
     (3, 192, 1, 1),
@@ -23,6 +24,7 @@ architecture_config = [
     (1, 256, 1, 0),
     (3, 512, 1, 1),
     "M",
+    # List: tuples and then last integer represents number of repeats
     [(1, 256, 1, 0), (3, 512, 1, 1), 4],
     (1, 512, 1, 0),
     (3, 1024, 1, 1),
