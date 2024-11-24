@@ -60,5 +60,5 @@ def main(image_path):
     plt.show()
 
 if __name__ == "__main__":
-    test_image_path = "D:/YOLO/Yolo1/000001.jpg"  # 테스트할 이미지 경로
+    test_image_path = "D:/YOLO/Yolo1/test_image.jpg"  # 테스트할 이미지 경로
     main(test_image_path)
