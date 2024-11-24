@@ -50,7 +50,7 @@ class YoloLoss(nn.Module):
         exists_box = target[..., 20].unsqueeze(3)  # in paper this is Iobj_i
 
         # ======================== #
-        #   FOR BOX COORDINATES    #
+        #   FOR BOX COORDINATES    # 
         # ======================== #
 
         # Set boxes with no object in them to 0. We only take out one of the two 
